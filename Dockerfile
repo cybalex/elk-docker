@@ -1,5 +1,5 @@
 # Dockerfile for ELK stack
-# Elasticsearch, Logstash, Kibana 6.2.2
+# Elasticsearch, Logstash, Kibana 5.6.8
 
 # Build with:
 # docker build -t <repo-user>/elk .
@@ -9,7 +9,7 @@
 
 FROM phusion/baseimage
 MAINTAINER Sebastien Pujadas http://pujadas.net
-ENV REFRESHED_AT 2017-02-28
+ENV REFRESHED_AT 2017-03-14
 
 
 ###############################################################################
@@ -39,7 +39,7 @@ RUN set -x \
  && set +x
 
 
-ENV ELK_VERSION 6.2.2
+ENV ELK_VERSION 5.6.8
 
 ### install Elasticsearch
 
